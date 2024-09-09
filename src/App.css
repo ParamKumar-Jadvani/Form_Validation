@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#form {
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 40px;
+}
+
+.input-Div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+
+#submit-btn {
+  margin: 7px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  input {
+    padding: 6px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    transition: all 0.3s ease-out;
+  }
+
+  input:hover {
+    cursor: pointer;
+    background-color: rgb(102, 182, 248);
+    color: balck;
+  }
+}
+
+#product-title {
+  text-align: center;
+}
+
+#product-parent-div {
+  margin-top: 18px;
+  margin-inline: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
