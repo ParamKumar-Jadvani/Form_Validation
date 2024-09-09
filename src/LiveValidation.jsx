@@ -14,7 +14,7 @@ const LiveValidation = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (name !== "" || emailRegex.test(email) || pswRegex.test(password)) {
+    if (name !== "" && emailRegex.test(email) && pswRegex.test(password)) {
       toast.success("Form Submitted successFully", {
         position: "top-center",
         autoClose: 3000,
