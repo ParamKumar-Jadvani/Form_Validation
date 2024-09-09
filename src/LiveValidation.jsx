@@ -64,7 +64,7 @@ const LiveValidation = () => {
             <input
               type="text"
               style={{
-                border: name !== "" ? GreenStyle : "2px solid red",
+                border: name !== "" ? "2px solid green" : "2px solid red",
                 borderRadius: "5px",
                 outline: "none",
               }}
@@ -77,7 +77,9 @@ const LiveValidation = () => {
               type="text"
               onChange={(e) => setEmail(e.target.value)}
               style={{
-                border: emailRegex.test(email) ? GreenStyle : "2px solid red",
+                border: emailRegex.test(email)
+                  ? "2px solid green"
+                  : "2px solid red",
                 borderRadius: "5px",
                 outline: "none",
               }}
@@ -89,7 +91,9 @@ const LiveValidation = () => {
               type="text"
               onChange={(e) => setPassword(e.target.value)}
               style={{
-                border: pswRegex.test(password) ? GreenStyle : "2px solid red",
+                border: pswRegex.test(password)
+                  ? "2px solid green"
+                  : "2px solid red",
                 borderRadius: "5px",
                 outline: "none",
               }}
